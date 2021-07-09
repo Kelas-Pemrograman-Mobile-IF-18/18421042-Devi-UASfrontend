@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:stretchColumns="1">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:background="#FFF">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Input Data Menu Makanan"
+                        android:textColor="@color/purple_700"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000"
+                        android:layout_marginTop="15dp"
+                        android:background="#F1E1FB"
+                        android:hint="Id Menu">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#636E72"
+                            android:textSize="14dp"
+                            android:textColorHint="#636E72"
+                            android:id="@+id/edtidmenu"
+                            android:inputType="textAutoComplete"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Menu"
+                        android:textColorHint="#000000"
+                        android:background="#F1E1FB"
+                        android:layout_marginTop="5dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#636E72"
+                            android:textSize="14dp"
+                            android:id="@+id/edtnamamenu"
+                            android:textColorHint="#636E72"
+                            android:inputType="textAutoComplete"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Harga Menu"
+                        android:textColorHint="#000000"
+                        android:background="#F1E1FB"
+                        android:layout_marginTop="5dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#636E72"
+                            android:textSize="14dp"
+                            android:id="@+id/edthargamenu"
+                            android:textColorHint="#636E72"
+                            android:inputType="textEmailAddress"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Rating Menu"
+                        android:textColorHint="#000000"
+                        android:background="#F1E1FB"
+                        android:layout_marginTop="5dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#636E72"
+                            android:textSize="14dp"
+                            android:id="@+id/edtratingmenu"
+                            android:textColorHint="#636E72"
+                            android:inputType="textEmailAddress"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kategori"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kategori"
+                            android:textColor="#000000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="appetizer"
+                            android:background="#F1E1FB"
+                            android:id="@+id/appet"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="main course"
+                            android:background="#F1E1FB"
+                            android:id="@+id/mainco"/>
+
+                        <RadioButton
+                            android:id="@+id/dess"
+                            android:layout_width="match_parent"
+                            android:background="#F1E1FB"
+                            android:layout_height="wrap_content"
+                            android:text="dessert" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="drink"
+                            android:background="#F1E1FB"
+                            android:id="@+id/drink"/>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btnTakeImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@color/purple_700"
+                        android:text="Ambil Gambar"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/gambar"/>
+
+                    <Button
+                        android:id="@+id/btnUploadGambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Upload Gambar"
+                        android:textAllCaps="false"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Simpan Data"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/simpanData"
+                        android:background="@color/purple_700"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devianggraini.utsapilkasicatering">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UtsApilkasiCatering"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".admin.PesananUser"></activity>
+        <activity android:name=".users.menu_dessert" />
+        <activity android:name=".users.detailMenu" />
+        <activity android:name=".users.menu_drink" />
+        <activity android:name=".users.menu_mainCourse" />
+        <activity android:name=".users.menu_appetizer" />
+        <activity android:name=".users.home_user" />
+        <activity android:name=".admin.Profile" />
+        <activity android:name=".admin.InputDataMenu" />
+        <activity android:name=".admin.ActivityEditMenudanHapusMenu" />
+        <activity android:name=".admin.ActivityDataMenu" />
+        <activity android:name=".users.PesananUser" />
+        <activity android:name=".users.User_Profile" />
+        <activity android:name=".users.Register" />
+        <activity android:name=".admin.MenuHome" />
+        <activity android:name=".users.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
